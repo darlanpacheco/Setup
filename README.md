@@ -1,2 +1,2 @@
 # Setup
- Shell script and batch setup files
+ Shell script setup files
