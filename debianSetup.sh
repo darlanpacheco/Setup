@@ -26,7 +26,7 @@ sudo apt update
 # Installing packages from the official Debian repository.
 sudo apt install git curl neofetch man ranger
 sudo apt install gnome-shell gnome gnome-software-plugin-flatpak gnome-tweaks gnome-boxes flatpak snapd file-roller mangohud papirus-icon-theme
-sudo apt install flameshot timeshift chromium gimp inkscape blender lmms obs-studio kdenlive steam
+sudo apt install cpu-x flameshot timeshift chromium gimp inkscape blender lmms obs-studio kdenlive steam
 sudo apt install base-files dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine wine32
 
 # Enable Flatpak.
