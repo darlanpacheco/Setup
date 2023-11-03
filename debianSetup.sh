@@ -10,6 +10,10 @@ echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
 
 export PATH='/home/$(whoami)/.local/bin:$PATH'
 
+alias k='kgx'
+alias n='nautilus'
+alias f='firefox'
+
 alias c='clear'
 alias auu='sudo apt update && sudo apt upgrade'
 alias ai='sudo apt install'
@@ -27,7 +31,7 @@ sudo apt update
 sudo apt install git curl neofetch man ranger
 sudo apt install gnome-shell gnome gnome-software-plugin-flatpak gnome-tweaks gnome-boxes flatpak snapd file-roller mangohud papirus-icon-theme
 sudo apt install cpu-x flameshot timeshift chromium gimp inkscape blender lmms obs-studio kdenlive steam
-sudo apt install base-files dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine wine32
+sudo apt install base-files sudo dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine wine32
 
 # Enable Flatpak.
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
