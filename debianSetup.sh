@@ -1,5 +1,5 @@
 # Update the repository and the system.
-apt update && apt upgrade
+apt update && apt upgrade && apt install sudo
 
 # Setting up Bash.
 echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
@@ -21,7 +21,7 @@ alias ar='sudo apt remove'
 alias dr='dotnet run'" >~/.bashrc
 
 # Installing Wget.
-apt install wget
+sudo apt install wget
 
 # Dotnet repository.
 wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -29,14 +29,15 @@ dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 
 # Update the system again.
-apt update
+sudo apt update
 
 # Installing packages from the official Debian repository.
-apt install neofetch man ranger
-apt install flatpak snapd mangohud papirus-icon-theme gnome-boxes file-roller
-apt install sudo git curl wget dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine wine32
+sudo apt install neofetch man ranger
+sudo apt install flatpak snapd mangohud papirus-icon-theme
+sudo apt install kgx nautilus cpu-x flameshot timeshift gnome-boxes file-roller
+sudo apt install sudo git curl dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine
 
-sudo apt install cpu-x flameshot timeshift chromium gimp inkscape blender lmms obs-studio kdenlive steam
+sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 
 # Enable Flatpak.
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
