@@ -51,6 +51,10 @@ sudo snap install core && sudo snap install code --classic && sudo snap install 
 # Setting up Lunar Vim.
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
+mkdir -p ~/.config/lvim
+
+echo 'vim.opt.wrap = true' >~/.config/lvim/config.lua
+
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud
 
