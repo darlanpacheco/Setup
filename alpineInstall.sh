@@ -12,22 +12,18 @@ doas passwd -l root
 doas apk update && doas apk upgrade && doas apk add vim
 
 # Setting up repositories
-vim /etc/apk/repositories
+doas vim /etc/apk/repositories
 
 # Setting up Bash.
 export SHELL=/bin/bash
 echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
-
 # \w
 # \[\e[38;2;190;190;255m\]
 # \[\e[0m\]
-
 export PATH='/home/$(whoami)/.local/bin:$PATH'
-
 alias k='kgx'
 alias n='nautilus'
 alias f='firefox'
-
 alias c='clear'
 alias auu='doas apk update && doas apk upgrade'
 alias aa='doas apk add'
@@ -49,7 +45,7 @@ doas apk add awesome firefox chromium gimp inkscape blender lmms obs-studio kden
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # add applications via Flatpak.
-doas flatpak add flathub com.discordapp.Discord com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
+doas flatpak install flathub com.discordapp.Discord com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
 
 # Setting up Lunar Vim.
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/adder/add.sh)
