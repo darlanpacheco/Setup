@@ -15,7 +15,6 @@ doas apk update && doas apk upgrade && doas apk add vim
 doas vim /etc/apk/repositories
 
 # Setting up Bash.
-export SHELL=/bin/bash
 echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
 # \w
 # \[\e[38;2;190;190;255m\]
@@ -34,10 +33,10 @@ alias dr='dotnet run'" >~/.bashrc
 doas apk update
 
 # adding packages from the official Debian repository.
-doas apk add bash neofetch bottom ranger
+doas apk add bash vim neovim neofetch bottom ranger
 doas apk add flatpak papirus-icon-theme
 doas apk add kgx nautilus gnome-boxes file-roller
-doas apk add curl dosfstools ntfs-3g fuse dotnet-sdk-7.0 nodejs npm cargo python3 make wine
+doas apk add curl wget dosfstools ntfs-3g make fuse dotnet-sdk-7.0 nodejs wine
 
 doas apk add awesome firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 
@@ -46,12 +45,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 # add applications via Flatpak.
 doas flatpak install flathub com.discordapp.Discord com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
-
-# Setting up Lunar Vim.
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/adder/add.sh)
-
-mkdir -p ~/.config/lvim
-echo 'vim.opt.wrap = true' >~/.config/lvim/config.lua
 
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud

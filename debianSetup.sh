@@ -32,10 +32,10 @@ rm packages-microsoft-prod.deb
 sudo apt update
 
 # Installing packages from the official Debian repository.
-sudo apt install neofetch man ranger
+sudo apt install bash vim neovim neofetch man ranger
 sudo apt install flatpak snapd mangohud papirus-icon-theme
 sudo apt install kgx nautilus cpu-x flameshot timeshift gnome-boxes file-roller
-sudo apt install sudo git curl dosfstools ntfs-3g fuse3 dotnet-sdk-7.0 nodejs npm cargo python3 python3-pip make wine
+sudo apt install sudo git curl wget dosfstools ntfs-3g make fuse3 dotnet-sdk-7.0 nodejs wine
 
 sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 
@@ -47,13 +47,6 @@ sudo flatpak install flathub com.discordapp.Discord com.bitwarden.desktop com.gi
 
 # Install Snap packages.
 sudo snap install core && sudo snap install code --classic && sudo snap install bun-js --classic && sudo sudo snap install bottom
-
-# Setting up Lunar Vim.
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-
-mkdir -p ~/.config/lvim
-
-echo 'vim.opt.wrap = true' >~/.config/lvim/config.lua
 
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud
