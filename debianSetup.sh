@@ -31,7 +31,7 @@ sudo apt update
 # Installing packages from the official Debian repository.
 sudo apt install bash vim neovim neofetch man ranger
 sudo apt install flatpak snapd mangohud papirus-icon-theme
-sudo apt install kgx nautilus cpu-x flameshot timeshift gnome-boxes file-roller
+sudo apt install kgx nautilus flameshot timeshift gnome-boxes file-roller
 sudo apt install sudo git curl wget dosfstools ntfs-3g make fuse3 dotnet-sdk-7.0 nodejs lua5.4 wine
 
 sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
@@ -40,7 +40,7 @@ sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Install applications via Flatpak.
-sudo flatpak install flathub com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
+sudo flatpak install flathub net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
 
 # Install Snap packages.
 sudo snap install core && sudo snap install code --classic && sudo snap install bun-js --classic && sudo sudo snap install bottom
