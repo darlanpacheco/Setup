@@ -36,15 +36,15 @@ doas apk update
 doas apk add bash vim neovim neofetch bottom ranger
 doas apk add flatpak papirus-icon-theme
 doas apk add kgx nautilus gnome-boxes file-roller
-doas apk add curl wget dosfstools ntfs-3g make fuse dotnet-sdk-7.0 nodejs wine
+doas apk add curl wget dosfstools ntfs-3g make fuse dotnet-sdk-7.0 nodejs lua wine
 
-doas apk add awesome firefox chromium gimp inkscape blender lmms obs-studio kdenlive
+doas apk add awesome firefox chromium gimp inkscape blender obs-studio kdenlive
 
 # Enable Flatpak.
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # add applications via Flatpak.
-doas flatpak install flathub com.discordapp.Discord com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
+doas flatpak install flathub com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
 
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud
