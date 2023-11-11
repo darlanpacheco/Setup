@@ -24,6 +24,7 @@ alias k='kgx'
 alias n='nautilus'
 alias f='firefox'
 alias c='clear'
+alias e='exit'
 alias auu='doas apk update && doas apk upgrade'
 alias aa='doas apk add'
 alias ad='doas apk del'
@@ -62,6 +63,9 @@ git clone https://github.com/darlanpach/JS-OOP ~/Projects/JS-OOP
 git clone https://github.com/darlanpach/HTML-and-CSS ~/Projects/HTML-and-CSS
 git clone https://github.com/darlanpach/Website02 ~/Projects/Website02
 git clone https://github.com/darlanpach/Website03 ~/Projects/Website03
+
+# Basic home folders.
+mkdir ~/Downloads ~/Documents ~/Videos
 
 # Update the system again.
 doas apk update && doas apk upgrade

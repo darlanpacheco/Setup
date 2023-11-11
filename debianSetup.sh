@@ -3,18 +3,15 @@ apt update && apt upgrade && apt install sudo
 
 # Setting up Bash.
 echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
-
 # \w
 # \[\e[38;2;190;190;255m\]
 # \[\e[0m\]
-
 export PATH='/home/$(whoami)/.local/bin:$PATH'
-
 alias k='kgx'
 alias n='nautilus'
 alias f='firefox'
-
 alias c='clear'
+alias e='exit'
 alias auu='sudo apt update && sudo apt upgrade'
 alias ai='sudo apt install'
 alias ar='sudo apt remove'
