@@ -37,7 +37,7 @@ sudo apt install sudo git curl wget dosfstools ntfs-3g make fuse3 dotnet-sdk-7.0
 sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 
 # Enable Flatpak.
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Install applications via Flatpak.
 sudo flatpak install flathub net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
