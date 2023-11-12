@@ -4,7 +4,7 @@
 # Log into standard user and run it.
 
 # doas apk add git
-# git clone https://github.com/darlanpach/Setup /tmp/Setup
+# git clone https://github.com/darlanpacheco/Setup /tmp/Setup
 
 doas passwd -l root
 
@@ -57,12 +57,13 @@ ram
 position=middle-right
 toggle_hud=F12' >~/.config/MangoHud/MangoHud.conf
 
-git clone https://github.com/darlanpach/Setup ~/Projects/Setup
-git clone https://github.com/darlanpach/CSharp ~/Projects/CSharp
-git clone https://github.com/darlanpach/JS-OOP ~/Projects/JS-OOP
-git clone https://github.com/darlanpach/HTML-and-CSS ~/Projects/HTML-and-CSS
-git clone https://github.com/darlanpach/Website02 ~/Projects/Website02
-git clone https://github.com/darlanpach/Website03 ~/Projects/Website03
+git clone https://github.com/darlanpacheco/CSharp ~/Projects/CSharp
+git clone https://github.com/darlanpacheco/Setup ~/Projects/Setup
+git clone https://github.com/darlanpacheco/Neovim ~/Projects/Neovim
+git clone https://github.com/darlanpacheco/JS-OOP ~/Projects/JS-OOP
+git clone https://github.com/darlanpacheco/HTML-and-CSS ~/Projects/HTML-and-CSS
+git clone https://github.com/darlanpacheco/Website02 ~/Projects/Website02
+git clone https://github.com/darlanpacheco/Website03 ~/Projects/Website03
 
 # Basic home folders.
 mkdir ~/Downloads ~/Documents ~/Videos
