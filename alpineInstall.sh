@@ -33,7 +33,6 @@ alias dr='dotnet run'" >~/.bashrc
 # Update the system again.
 doas apk update
 
-# adding packages from the official Debian repository.
 doas apk add bash vim neovim neofetch bottom ranger
 doas apk add flatpak papirus-icon-theme
 doas apk add kgx nautilus gnome-boxes file-roller
@@ -44,8 +43,11 @@ doas apk add awesome firefox chromium gimp inkscape blender obs-studio kdenlive
 # Enable Flatpak.
 doas flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# add applications via Flatpak.
 doas flatpak install flathub net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker
+
+# Setting up Neovim.
+sudo rm -r ~/.config/nvim
+git clone https://github.com/darlanpacheco/Neovim ~/.config/nvim
 
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud
@@ -64,6 +66,7 @@ git clone https://github.com/darlanpacheco/JS-OOP ~/Projects/JS-OOP
 git clone https://github.com/darlanpacheco/HTML-and-CSS ~/Projects/HTML-and-CSS
 git clone https://github.com/darlanpacheco/Website02 ~/Projects/Website02
 git clone https://github.com/darlanpacheco/Website03 ~/Projects/Website03
+git clone https://github.com/darlanpacheco/Website04 ~/Projects/Website04
 
 # Basic home folders.
 mkdir ~/Downloads ~/Documents ~/Videos

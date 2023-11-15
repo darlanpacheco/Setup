@@ -39,11 +39,13 @@ sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
 # Enable Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# Install applications via Flatpak.
 sudo flatpak install flathub net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
 
-# Install Snap packages.
 sudo snap install core && sudo snap install code --classic && sudo snap install bun-js --classic && sudo sudo snap install bottom
+
+# Setting up Neovim.
+sudo rm -r ~/.config/nvim
+git clone https://github.com/darlanpacheco/Neovim ~/.config/nvim
 
 # Setting up MangoHud.
 mkdir -p ~/.config/MangoHud
@@ -62,6 +64,7 @@ git clone https://github.com/darlanpacheco/JS-OOP ~/Projects/JS-OOP
 git clone https://github.com/darlanpacheco/HTML-and-CSS ~/Projects/HTML-and-CSS
 git clone https://github.com/darlanpacheco/Website02 ~/Projects/Website02
 git clone https://github.com/darlanpacheco/Website03 ~/Projects/Website03
+git clone https://github.com/darlanpacheco/Website04 ~/Projects/Website04
 
 # Update the system again.
 sudo apt update && sudo apt upgrade && sudo apt autoremove
