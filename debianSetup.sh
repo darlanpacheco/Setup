@@ -72,6 +72,9 @@ git clone https://github.com/darlanpacheco/Website04 ~/Projects/Website04
 # Basic home folders.
 mkdir ~/Downloads ~/Documents ~/Videos
 
+# Sudoers file
+sudo nvim /etc/sudoers
+
 # Update the system again.
 sudo apt update && sudo apt upgrade && sudo apt autoremove
 
