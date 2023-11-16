@@ -52,7 +52,7 @@ echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
 # \[\e[0m\]
 alias k='kgx'
 alias n='nautilus'
-alias f='firefox'
+alias f='firefox-developer-edition'
 alias c='clear'
 alias e='exit'
 alias Syu='sudo pacman -Syu'
@@ -61,9 +61,10 @@ alias R='sudo pacman -R'" >~/.bashrc
 
 sudo pacman -S --needed bash vim neovim neofetch ranger
 sudo pacman -S --needed flatpak mangohud papirus-icon-theme
-sudo pacman -S --needed nautilus flameshot timeshift gnome-boxes file-roller
+sudo pacman -S --needed flameshot timeshift gnome-boxes file-roller
 sudo pacman -S --needed sudo dosfstools ntfs-3g git curl wget make fuse dotnet-sdk nodejs lua
-sudo pacman -S --needed firefox chromium gimp inkscape blender lmms obs-studio kdenlive
+sudo pacman -S --needed firefox-developer-edition chromium gimp inkscape blender lmms obs-studio kdenlive
+sudo pacman -S --needed gdm gnome gnome-shell
 
 # Enable Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
