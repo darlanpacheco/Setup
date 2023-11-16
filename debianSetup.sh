@@ -1,12 +1,15 @@
 # Update the repository and the system.
-apt update && apt upgrade && apt install sudo
+apt update && apt upgrade && apt install ntp sudo git
+
+# Ntp config.
+systemctl restart ntp
+systemctl start ntp
 
 # Setting up Bash.
 echo "PS1='[\[\e[38;2;190;190;255m\]\w\[\e[0m\]]> '
 # \w
 # \[\e[38;2;190;190;255m\]
 # \[\e[0m\]
-export PATH='/home/$(whoami)/.local/bin:$PATH'
 alias k='kgx'
 alias n='nautilus'
 alias f='firefox'
@@ -34,7 +37,7 @@ sudo apt install flatpak snapd mangohud papirus-icon-theme
 sudo apt install kgx nautilus flameshot timeshift gnome-boxes file-roller
 sudo apt install sudo git curl wget dosfstools ntfs-3g make fuse3 dotnet-sdk-7.0 nodejs lua5.4 wine
 
-sudo apt install firefox chromium gimp inkscape blender lmms obs-studio kdenlive
+sudo apt install firefox-esr chromium gimp inkscape blender lmms obs-studio kdenlive
 
 # Enable Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -75,11 +78,5 @@ sudo apt update && sudo apt upgrade && sudo apt autoremove
 # Open external links.
 # xdg-open https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
-# .desktop example
-# [Desktop Entry]
-# Name=
-# Exec=
-# Type=Application
-
-# Configurations
+# Vinegar configuration.
 # flatpak run io.github.vinegarhq.Vinegar edit >[player.fflags] DFIntTaskSchedulerTargetFps = 75
