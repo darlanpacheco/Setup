@@ -30,7 +30,7 @@ genfstab -U -p /mnt >>/mnt/etc/fstab
 
 arch-chroot /mnt /bin/bash
 
-sudo pacman -S grub efibootmgr networkmanager network-manager-applet wpa_supplicant sudo gdm git
+sudo pacman -S grub efibootmgr networkmanager gdm git
 
 systemctl enable NetworkManager gdm
 
@@ -59,12 +59,12 @@ alias Syu='sudo pacman -Syu'
 alias S='sudo pacman -S --needed'
 alias R='sudo pacman -R'" >~/.bashrc
 
-sudo pacman -S --needed bash vim neovim neofetch ranger
+sudo pacman -S --needed bash vim neovim neofetch bottom ranger
 sudo pacman -S --needed flatpak mangohud papirus-icon-theme
 sudo pacman -S --needed flameshot timeshift gnome-boxes file-roller
-sudo pacman -S --needed sudo dosfstools ntfs-3g git curl wget make fuse dotnet-sdk nodejs lua
+sudo pacman -S --needed curl wget dosfstools ntfs-3g git make fuse dotnet-sdk nodejs lua
 sudo pacman -S --needed firefox-developer-edition chromium gimp inkscape blender lmms obs-studio kdenlive
-sudo pacman -S --needed gdm gnome gnome-shell
+sudo pacman -S --needed awesome gdm gnome gnome-shell
 
 # Enable Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

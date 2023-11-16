@@ -17,7 +17,6 @@ alias c='clear'
 alias e='exit'
 alias auu='sudo apt update && sudo apt upgrade'
 alias ai='sudo apt install'
-alias ar='sudo apt remove'
 alias dr='dotnet run'" >~/.bashrc
 
 # Installing Wget.
@@ -32,12 +31,12 @@ rm packages-microsoft-prod.deb
 sudo apt update
 
 # Installing packages from the official Debian repository.
-sudo apt install bash vim neovim neofetch man ranger
+sudo apt install bash vim neovim neofetch ranger
 sudo apt install flatpak snapd mangohud papirus-icon-theme
-sudo apt install kgx nautilus flameshot timeshift gnome-boxes file-roller
-sudo apt install sudo git curl wget dosfstools ntfs-3g make fuse3 dotnet-sdk-7.0 nodejs lua5.4 wine
-
+sudo apt install flameshot timeshift gnome-boxes file-roller
+sudo apt install sudo curl wget dosfstools ntfs-3g git make fuse3 dotnet-sdk-7.0 nodejs lua5.4 wine
 sudo apt install firefox-esr chromium gimp inkscape blender lmms obs-studio kdenlive
+sudo apt install awesome gdm gnome gnome-shell
 
 # Enable Flatpak.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
