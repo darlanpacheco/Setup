@@ -7,8 +7,8 @@ cfdisk /dev/device
 
 # Formating partitions
 mkfs.fat -F32 /dev/bootpart
-mkfs.btrfs /dev/rootpart
-mkfs.btrfs /dev/homepart
+mkfs.ext4 /dev/rootpart
+mkfs.ext4 /dev/homepart
 mkswap /dev/swappart
 
 mount /dev/rootpart /mnt

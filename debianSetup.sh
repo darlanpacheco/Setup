@@ -33,6 +33,9 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resourc
 # Snap install
 sudo snap install core
 
+# Npm install
+sudo npm install -g typescript tsc
+
 # Setting up Neovim.
 sudo rm -r ~/.config/nvim
 git clone https://github.com/darlanpacheco/Neovim ~/.config/nvim
