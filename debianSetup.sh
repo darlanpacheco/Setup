@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install bash vim neofetch ranger
 sudo apt install flatpak snapd mangohud papirus-icon-theme
 sudo apt install flameshot timeshift file-roller
-sudo apt install sudo curl dosfstools ntfs-3g git make fuse3 dotnet-sdk-7.0 nodejs npm lua5.4 wine
+sudo apt install sudo curl dosfstools ntfs-3g git make fuse3 dotnet-sdk-8.0 nodejs npm lua5.4 wine
 sudo apt install firefox-esr chromium gimp krita blender lmms obs-studio kdenlive
 sudo apt install awesome
 
