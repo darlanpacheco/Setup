@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install bash vim neofetch ranger
 sudo apt install flatpak snapd mangohud papirus-icon-theme
 sudo apt install flameshot timeshift file-roller
-sudo apt install sudo curl dosfstools ntfs-3g git make fuse3 dotnet-sdk-8.0 nodejs npm lua5.4 wine
+sudo apt install sudo ufw curl dosfstools ntfs-3g git make fuse3 dotnet-sdk-8.0 nodejs npm lua5.4 wine
 sudo apt install firefox-esr chromium gimp krita blender lmms obs-studio kdenlive
 sudo apt install awesome
 
@@ -35,6 +35,14 @@ sudo snap install core
 
 # Npm install
 sudo npm install -g typescript tsc
+
+# Ufw set up
+sudo ufw limit 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
 
 # Setting up Neovim.
 sudo rm -r ~/.config/nvim
