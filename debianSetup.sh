@@ -34,7 +34,7 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resourc
 sudo snap install core
 
 # Npm install
-sudo npm install -g typescript tsc
+sudo npm install -g typescript
 
 # Ufw set up
 sudo ufw limit 22/tcp
