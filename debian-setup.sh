@@ -28,13 +28,13 @@ sudo apt install awesome
 
 # Enable and install Flatpaks.
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
+sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resources com.discordapp.Discord org.godotengine.GodotSharp com.bitwarden.desktop com.github.finefindus.eyedropper org.gnome.Boxes com.vixalien.sticky org.upscayl.Upscayl com.usebottles.bottles org.localsend.localsend_app io.github.vinegarhq.Vinegar xyz.xclicker.xclicker -y
 
 # Snap install
 sudo snap install core
 
 # Npm install
-sudo npm install -g typescript
+sudo npm install -g typescript live-server
 
 # Ufw set up
 sudo ufw limit 22/tcp
@@ -76,7 +76,6 @@ git clone https://github.com/darlanpacheco/CSharp ~/Projects/CSharp
 git clone https://github.com/darlanpacheco/Setup ~/Projects/Setup
 git clone https://github.com/darlanpacheco/Neovim ~/Projects/Neovim
 git clone https://github.com/darlanpacheco/JS-OOP ~/Projects/JS-OOP
-git clone https://github.com/darlanpacheco/HTML-and-CSS ~/Projects/HTML-and-CSS
 git clone https://github.com/darlanpacheco/Website02 ~/Projects/Website02
 git clone https://github.com/darlanpacheco/Website03 ~/Projects/Website03
 git clone https://github.com/darlanpacheco/Website04 ~/Projects/Website04
