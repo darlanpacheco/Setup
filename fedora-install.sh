@@ -6,7 +6,7 @@ sudo dnf update
 # Installing packages from the official Fedora repository.
 sudo dnf install bash vim neovim neofetch ranger
 sudo dnf install flatpak snapd mangohud papirus-icon-theme
-sudo dnf install flameshot timeshift file-roller
+sudo dnf install flameshot file-roller
 sudo dnf install sudo ufw curl dosfstools ntfs-3g git make fuse dotnet-sdk-7.0 nodejs npm lua wine
 sudo dnf install firefox chromium gimp krita blender lmms obs-studio kdenlive steam
 sudo dnf install awesome
