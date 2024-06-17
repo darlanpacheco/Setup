@@ -1,9 +1,10 @@
 sudo apt update -y && sudo apt upgrade -y && sudo apt install wget curl -y
 
-# Installing .NET SDK
-wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O dotnet.deb
-sudo dpkg -i dotnet.deb
-sudo rm dotnet.deb
+# Installing DOTNET SDK
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+sudo chmod +x ./dotnet-install.sh
+./dotnet-install.sh --version latest
+sudo rm ./dotnet-install.sh
 
 sudo apt update -y && sudo apt upgrade -y
 
@@ -50,7 +51,7 @@ toggle_hud=F12' >~/.config/MangoHud/MangoHud.conf
 
 # Creating projects folder
 mkdir ~/Projects
-mkdir ~/Android
+mkdir ~/Paths
 
 # Open web links
 xdg-open https://github.com/lassekongo83/adw-gtk3/releases
