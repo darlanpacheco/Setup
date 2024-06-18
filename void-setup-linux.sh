@@ -126,9 +126,6 @@ echo '{
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    ".gitignore": "*.json, *.yaml, *.xml, *.iml, *.csproj, *.sln, .prettierrc, .editorconfig, .eslintrc.cjs, postcss.config.js, tailwind.config.js, vite.config.ts, CHANGELOG.md"
-  },
 
   "breadcrumbs.enabled": false,
   "terminal.integrated.fontSize": 17.5,
@@ -152,7 +149,6 @@ echo '[
   }
 ]' >~/.config/"Code - OSS"/User/keybindings.json
 
-code-oss --install-extension Vue.volar
 code-oss --install-extension Dart-Code.flutter
 code-oss --install-extension bradlc.vscode-tailwindcss
 code-oss --install-extension mtxr.sqltools
@@ -166,10 +162,10 @@ code-oss --install-extension dbaeumer.vscode-eslint
 code-oss --install-extension dsznajder.es7-react-js-snippets
 code-oss --install-extension usernamehw.errorlens
 code-oss --install-extension EditorConfig.EditorConfig
+code-oss --install-extension ms-azuretools.vscode-docker
 code-oss --install-extension ms-vscode.live-server
 code-oss --install-extension ms-vscode.vscode-typescript-next
 code-oss --install-extension ms-dotnettools.csdevkit
-code-oss --install-extension ms-dotnettools.vscode-dotnet-runtime
 
 sudo xbps-install -Suy && flatpak update -y && flutter upgrade
 
