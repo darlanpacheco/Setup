@@ -3,10 +3,9 @@
 xbps-install -u xbps
 xbps-install -Suy
 void-installer
+xbps-install -Suy git
 
 COMMENT
-
-sudo xbps-install -Suy
 
 # Creating projects folder
 mkdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos ~/Projects ~/Paths
@@ -61,12 +60,15 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 # Setting up Bash
-echo 'PS1="\[\e[1;32m\]\u@\h \[\e[1;34m\]\W\[\e[m\]\$ "
+echo 'PS1="\[\e[1;32m\]\h\[\e[1;34m\](\W)\[\e[0m\] "
+
 alias ls="ls --color=auto"
+alias xi="sudo xbps-install"
+alias xq="xbps-query"
+alias xr="sudo xbps-remove"
 
 export PATH="$PATH:$HOME/Paths/flutter/bin"
-export PATH="$PATH:$HOME/.dotnet/"
-' >~/.bashrc
+export PATH="$PATH:$HOME/.dotnet/"' >~/.bashrc
 
 # Setting up VSCode
 echo '{
