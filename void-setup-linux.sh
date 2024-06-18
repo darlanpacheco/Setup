@@ -3,28 +3,30 @@
 xbps-install -u xbps
 xbps-install -Suy
 void-installer
+bash
 xbps-install -Suy git
 
 COMMENT
 
 # Creating projects folder
-mkdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos ~/Projects ~/Paths
+mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos ~/Projects ~/Paths
 
 # Installing packages from the official Void repository
 sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 sudo xbps-install -Suy NetworkManager xorg gnome pulseaudio
-sudo xbps-install -Suy flatpak wine ufw papirus-icon-theme fastfetch
+sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config glibc-32bit mesa-32bit mesa-dri-32bit
+sudo xbps-install -Suy wget flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
 sudo xbps-install -Suy vscode neovim nodejs
-sudo xbps-install -Suy flameshot gnome-boxes firefox chromium steam
+sudo xbps-install -Suy flameshot gnome-boxes firefox steam
 sudo xbps-install -Suy gimp inkscape krita blender lmms obs kdenlive
 
-# Npm install
+# NPM install
 sudo npm install -g npm yarn typescript vite@latest tailwindcss @reacticons/ionicons -y
 
 # Flutter SDK download
 git clone https://github.com/flutter/flutter.git ~/Paths/flutter
 
-# Installing DOTNET SDK
+# Installing .NET SDK
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 sudo chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
@@ -36,22 +38,16 @@ sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resourc
 
 # Open web links
 # xdg-open https://github.com/lassekongo83/adw-gtk3/releases
-# xdg-open https://fonts.google.com/specimen/Space+Mono
 # xdg-open https://developer.android.com/studio
 # xdg-open https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 # xdg-open https://addons.mozilla.org/en-US/firefox/addon/darkreader/
-
-# Setting up links
-sudo ln -s /etc/sv/NetworkManager /var/service
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/gdm /var/service
 
 # Git configurations
 git config --global user.name "Darlan Pacheco"
 git config --global user.email "143919135+darlanpacheco@users.noreply.github.com"
 git config --global core.editor "nvim"
 
-# Ufw set up
+# UFw set up
 sudo ufw limit 22/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
@@ -71,6 +67,7 @@ export PATH="$PATH:$HOME/Paths/flutter/bin"
 export PATH="$PATH:$HOME/.dotnet/"' >~/.bashrc
 
 # Setting up VSCode
+mkdir -p ~/.config/"Code - OSS"/User
 echo '{
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -100,7 +97,7 @@ echo '{
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "editor.fontFamily": "space mono",
+  "editor.fontFamily": "spline sans mono",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
@@ -175,3 +172,8 @@ code-oss --install-extension ms-dotnettools.csdevkit
 code-oss --install-extension ms-dotnettools.vscode-dotnet-runtime
 
 sudo xbps-install -Suy && flatpak update -y && flutter upgrade
+
+# Setting up links
+sudo ln -s /etc/sv/NetworkManager /var/service
+sudo ln -s /etc/sv/dbus /var/service
+sudo ln -s /etc/sv/gdm /var/service
