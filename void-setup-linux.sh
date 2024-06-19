@@ -16,7 +16,7 @@ sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-n
 sudo xbps-install -Suy NetworkManager xorg gnome pulseaudio
 sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config Vulkan-Tools MesaLib-devel mesa-vulkan-radeon mesa-vaapi mesa-vdpau mesa-dri-32bit wine wine-32bit wine-mono
 sudo xbps-install -Suy wget curl flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
-sudo xbps-install -Suy vscode neovim nodejs
+sudo xbps-install -Suy vscode neovim nodejs docker docker-compose
 sudo xbps-install -Suy flameshot gnome-boxes firefox steam lutris MangoHud
 sudo xbps-install -Suy gimp inkscape krita blender lmms obs kdenlive
 
@@ -178,6 +178,7 @@ toggle_hud=F12' >~/.config/MangoHud/MangoHud.conf
 sudo xbps-install -Suy && flatpak update -y
 
 # Setting up links
-sudo ln -s /etc/sv/NetworkManager /var/service
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/gdm /var/service
+sudo ln -s /etc/sv/NetworkManager /var/service/NetworkManager
+sudo ln -s /etc/sv/dbus /var/service/dbus
+sudo ln -s /etc/sv/gdm /var/service/gdm
+sudo ln -s /etc/sv/docker /var/service/docker
