@@ -14,10 +14,10 @@ mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos ~/Project
 # Installing packages from the official Void repository
 sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 sudo xbps-install -Suy NetworkManager xorg gnome pulseaudio
-sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config glibc-32bit mesa-32bit mesa-dri-32bit
-sudo xbps-install -Suy wget flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
+sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config Vulkan-Tools MesaLib-devel mesa-vulkan-radeon mesa-vaapi mesa-vdpau mesa-dri-32bit wine wine-32bit wine-mono
+sudo xbps-install -Suy wget curl flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
 sudo xbps-install -Suy vscode neovim nodejs
-sudo xbps-install -Suy flameshot gnome-boxes firefox steam
+sudo xbps-install -Suy flameshot gnome-boxes firefox steam lutris MangoHud
 sudo xbps-install -Suy gimp inkscape krita blender lmms obs kdenlive
 
 # NPM install
@@ -167,7 +167,15 @@ code-oss --install-extension ms-vscode.live-server
 code-oss --install-extension ms-vscode.vscode-typescript-next
 code-oss --install-extension ms-dotnettools.csdevkit
 
-sudo xbps-install -Suy && flatpak update -y && flutter upgrade
+# Setting up MangoHud
+mkdir -p ~/.config/MangoHud
+echo 'cpu_temp
+gpu_temp
+ram
+position=middle-right
+toggle_hud=F12' >~/.config/MangoHud/MangoHud.conf
+
+sudo xbps-install -Suy && flatpak update -y
 
 # Setting up links
 sudo ln -s /etc/sv/NetworkManager /var/service
