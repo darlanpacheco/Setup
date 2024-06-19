@@ -1,0 +1,14 @@
+[
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.togglePanel"
+  }
+]

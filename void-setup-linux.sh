@@ -56,99 +56,12 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 # Setting up Bash
-echo 'PS1="\[\e[1;32m\]\h\[\e[1;34m\](\W)\[\e[0m\] "
-
-alias ls="ls --color=auto"
-alias xi="sudo xbps-install"
-alias xq="xbps-query"
-alias xr="sudo xbps-remove"
-alias dc="sudo docker"
-
-export PATH="$PATH:$HOME/Paths/flutter/bin"
-export PATH="$PATH:$HOME/.dotnet/"' >~/.bashrc
+cat ./.bashrc >~/.bashrc
 
 # Setting up VSCode
 mkdir -p ~/.config/"Code - OSS"/User
-echo '{
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "editor.fontFamily": "spline sans mono",
-  "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 17.5,
-
-  "workbench.colorCustomizations": {
-    "editor.background": "#1E1E1E",
-    "panel.background": "#1E1E1E",
-    "terminal.background": "#1E1E1E",
-    "statusBar.background": "#1E1E1E",
-    "sideBar.background": "#242424",
-    "sideBarSectionHeader.background": "#242424",
-    "statusBar.border": "#454545",
-    "panel.border": "#454545",
-    "editorGroup.border": "#454545",
-    "sideBar.border": "#00000000",
-    "sideBarSectionHeader.border": "#00000000",
-    "scrollbar.shadow": "#00000000"
-  },
-  "workbench.startupEditor": "none",
-  "workbench.editor.showTabs": "none",
-  "workbench.iconTheme": "icons",
-  "workbench.activityBar.location": "hidden",
-
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "explorer.fileNesting.enabled": true,
-
-  "breadcrumbs.enabled": false,
-  "terminal.integrated.fontSize": 17.5,
-  "update.showReleaseNotes": false,
-  "window.menuBarVisibility": "hidden",
-  "workbench.statusBar.visible": false
-}' >~/.config/"Code - OSS"/User/settings.json
-
-echo '[
-  {
-    "key": "ctrl+e",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.toggleStatusbarVisibility"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "workbench.action.togglePanel"
-  }
-]' >~/.config/"Code - OSS"/User/keybindings.json
+cat ./settings.json >~/.config/"Code - OSS"/User/settings.json
+cat ./keybindings.json >~/.config/"Code - OSS"/User/keybindings.json
 
 code-oss --install-extension Dart-Code.flutter
 code-oss --install-extension bradlc.vscode-tailwindcss
@@ -170,11 +83,7 @@ code-oss --install-extension ms-dotnettools.csdevkit
 
 # Setting up MangoHud
 mkdir -p ~/.config/MangoHud
-echo 'cpu_temp
-gpu_temp
-ram
-position=middle-right
-toggle_hud=F12' >~/.config/MangoHud/MangoHud.conf
+cat ./MangoHud.conf >~/.config/MangoHud/MangoHud.conf
 
 sudo xbps-install -Suy && flatpak update -y
 
