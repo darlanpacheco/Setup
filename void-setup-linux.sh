@@ -17,8 +17,8 @@ sudo xbps-install -Suy NetworkManager xorg gnome pulseaudio
 sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config Vulkan-Tools MesaLib-devel mesa-vulkan-radeon mesa-vaapi mesa-vdpau mesa-dri-32bit wine wine-32bit wine-mono
 sudo xbps-install -Suy wget curl flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
 sudo xbps-install -Suy vscode neovim nodejs docker docker-compose
-sudo xbps-install -Suy flameshot gnome-boxes firefox steam lutris MangoHud
-sudo xbps-install -Suy gimp inkscape krita blender lmms obs kdenlive
+sudo xbps-install -Suy flameshot gnome-boxes firefox steam MangoHud
+sudo xbps-install -Suy gimp blender lmms obs kdenlive
 
 # NPM install
 sudo npm install -g npm yarn typescript vite@latest tailwindcss @reacticons/ionicons -y
