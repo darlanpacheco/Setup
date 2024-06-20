@@ -15,9 +15,9 @@ mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Videos ~/Project
 sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
 sudo xbps-install -Suy NetworkManager xorg gnome pulseaudio
 sudo xbps-install -Suy gtk+3-devel clang cmake ninja pkg-config Vulkan-Tools MesaLib-devel mesa-vulkan-radeon mesa-vaapi mesa-vdpau mesa-dri-32bit wine wine-32bit wine-mono
-sudo xbps-install -Suy wget curl flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
-sudo xbps-install -Suy vscode neovim nodejs docker docker-compose
-sudo xbps-install -Suy flameshot gnome-boxes firefox steam MangoHud
+sudo xbps-install -Suy flatpak wine ufw google-fonts-ttf papirus-icon-theme fastfetch
+sudo xbps-install -Suy wget curl vscode neovim nodejs docker docker-compose
+sudo xbps-install -Suy flameshot gnome-boxes firefox libreoffice steam MangoHud
 sudo xbps-install -Suy gimp blender lmms obs kdenlive
 
 # NPM install
