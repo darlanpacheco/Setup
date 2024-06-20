@@ -35,15 +35,15 @@
   "editor.fontSize": 17.5,
 
   "workbench.colorCustomizations": {
-    "editor.background": "#1E1E1E",
-    "panel.background": "#1E1E1E",
-    "terminal.background": "#1E1E1E",
-    "statusBar.background": "#1E1E1E",
+    "editor.background": "#1F1F1F",
+    "panel.background": "#1F1F1F",
+    "terminal.background": "#1F1F1F",
+    "statusBar.background": "#1F1F1F",
     "sideBar.background": "#242424",
     "sideBarSectionHeader.background": "#242424",
-    "statusBar.border": "#454545",
-    "panel.border": "#454545",
-    "editorGroup.border": "#454545",
+    "statusBar.border": "#444444",
+    "panel.border": "#444444",
+    "editorGroup.border": "#444444",
     "sideBar.border": "#00000000",
     "sideBarSectionHeader.border": "#00000000",
     "scrollbar.shadow": "#00000000"

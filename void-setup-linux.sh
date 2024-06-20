@@ -47,10 +47,10 @@ git config --global user.name "Darlan Pacheco"
 git config --global user.email "143919135+darlanpacheco@users.noreply.github.com"
 git config --global core.editor "nvim"
 
-# UFw set up
-sudo ufw limit 22/tcp
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
+# UFW set up
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw limit ssh
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
