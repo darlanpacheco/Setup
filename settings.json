@@ -27,7 +27,7 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "editor.fontFamily": "spline sans mono",
+  "editor.fontFamily": "source code pro",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
@@ -50,8 +50,8 @@
   },
   "workbench.startupEditor": "none",
   "workbench.editor.showTabs": "none",
-  "workbench.iconTheme": "icons",
   "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Default Dark+",
 
   "explorer.confirmDelete": false,
   "breadcrumbs.enabled": false,
