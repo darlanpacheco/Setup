@@ -11,7 +11,7 @@ sudo nvim /etc/pacman.conf
 COMMENT
 
 <<COMMENT
-    sudo npm install -g npm yarn typescript create-react-app tailwindcss vite@latest @reacticons/ionicons -y
+    sudo npm install -g npm yarn typescript create-react-app react-router-dom tailwindcss vite@latest @reacticons/ionicons -y
 COMMENT
 
 <<COMMENT
