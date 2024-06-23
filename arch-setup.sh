@@ -6,7 +6,7 @@ sudo nvim /etc/pacman.conf
     sudo pacman -Suy --needed --noconfirm flatpak ufw papirus-icon-theme noto-fonts fastfetch
     sudo pacman -Suy --needed --noconfirm cmake vulkan-radeon lib32-vulkan-radeon libappimage
     sudo pacman -Suy --needed --noconfirm wget curl code nodejs npm docker docker-compose dotnet-sdk-8.0
-    sudo pacman -Suy --needed --noconfirm flameshot gnome-boxes gnome-tweaks firefox libreoffice steam mangohud
+    sudo pacman -Suy --needed --noconfirm flameshot gnome-boxes gnome-tweaks firefox chromium libreoffice steam mangohud
     sudo pacman -Suy --needed --noconfirm gimp blender lmms obs-studio kdenlive
 COMMENT
 

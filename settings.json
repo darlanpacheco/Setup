@@ -27,7 +27,7 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "editor.fontFamily": "source code pro",
+  "editor.fontFamily": "noto sans mono",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.formatOnSave": true,
