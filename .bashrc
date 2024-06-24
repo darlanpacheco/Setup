@@ -1,6 +1,8 @@
-PS1="\u@\h:\w\$\n > "
+PS1="\[\e[32m\]\u \[\e[0m\]on \[\e[34m\]\w\n \[\e[0m\]> "
 
 alias ls="ls --color=auto"
+alias c="clear"
+alias e="exit"
 
 alias suy="sudo pacman -Suy --needed --noconfirm"
 alias ss="pacman -Ss"
