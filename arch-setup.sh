@@ -32,8 +32,9 @@ COMMENT
 
 <<COMMENT
     https://github.com/lassekongo83/adw-gtk3/releases
-    https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
     https://addons.mozilla.org/en-US/firefox/addon/darkreader/
+    https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+    https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
 
     ssh-keygen -t ed25519 -C "email"
     cat ~/.ssh/id_ed25519.pub
