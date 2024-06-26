@@ -27,7 +27,7 @@ COMMENT
 
 <<COMMENT
     sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-    sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resources com.discordapp.Discord com.github.finefindus.eyedropper org.upscayl.Upscayl com.usebottles.bottles -y
+    sudo flatpak install flathub com.mattjakeman.ExtensionManager net.nokyan.Resources com.github.finefindus.eyedropper org.upscayl.Upscayl com.usebottles.bottles -y
 COMMENT
 
 <<COMMENT
