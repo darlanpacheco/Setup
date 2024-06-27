@@ -28,7 +28,7 @@ sudo pacman -Suy --noconfirm grub efibootmgr networkmanager xorg gdm gnome neovi
 grub-install /dev/archinstalldevice
 grub-mkconfig -o /boot/grub/grub.cfg
 
-useradd -m -G wheel my-username
+useradd -mG wheel my-username
 
 passwd root
 passwd my-username

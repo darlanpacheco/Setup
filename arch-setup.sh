@@ -69,7 +69,6 @@ code-oss --install-extension mongodb.mongodb-vscode
 code-oss --install-extension lkrms.inifmt
 code-oss --install-extension eamodio.gitlens
 code-oss --install-extension dbaeumer.vscode-eslint
-code-oss --install-extension dsznajder.es7-react-js-snippets
 code-oss --install-extension usernamehw.errorlens
 code-oss --install-extension EditorConfig.EditorConfig
 code-oss --install-extension muhammad-sammy.csharp
