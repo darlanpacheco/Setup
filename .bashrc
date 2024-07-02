@@ -8,6 +8,8 @@ alias suy="sudo pacman -Suy --needed --noconfirm"
 alias ss="pacman -Ss"
 alias r="sudo pacman -R --noconfirm"
 
+alias or="ollama run"
+
 alias dc="sudo docker"
 
 alias ga="git add -i"
